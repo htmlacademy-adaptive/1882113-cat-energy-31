@@ -2,6 +2,7 @@
 
 * Студент: [Nikolay Elisanov](https://up.htmlacademy.ru/adaptive/31/user/1882113).
 * Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
+* Проект: [cat-energy](https://homersimpsonj.github.io/1882113-cat-energy-31/).
 
 ---
 
