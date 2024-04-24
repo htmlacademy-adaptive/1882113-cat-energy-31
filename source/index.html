@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <title>Cat-Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -44,7 +48,11 @@
         <a class="hero__button-link button-link" href="#">
           Подобрать программу
         </a>
-        <img class="hero__image" src="#" width="552" height="499" alt="Баночка кошачьего питания. Вкус курица">
+        <picture>
+          <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/content-product/hero-desktop@1x.png 1x, images/content-product/hero-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/content-product/hero-tablet@1x.png 1x, images/content-product/hero-tablet@2x.png 2x">
+          <img class="hero__image" src="images/content-product/hero-mobile@1x.png" srcset="images/content-product/hero-mobile@2x.png 2x" width="280" height="270" alt="Баночка кошачьего питания. Вкус курица">
+        </picture>
       </div>
     </section>
     <section class="program-effect">
@@ -117,9 +125,15 @@
           </dl>
         </div>
         <div class="slider">
-          <div class="slider__photo slider__photo--before">
-          </div>
-          <div class="slider__photo slider__photo--after">
+          <div class="slider__photo">
+            <picture>
+              <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/content-site/image-slider/slider-tablet-before@1x.png 1x, images/content-site/image-slider/slider-tablet-before@2x.png 2x">
+              <img class="slider__image-before" src="images/content-site/image-slider/slider-tablet-before@1x.png" srcset="images/content-site/image-slider/slider-mobile-before@2x.png 2x" width="280" height="256" alt="Толстый кот до питания нашим кормом">
+            </picture>
+            <picture>
+              <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/content-site/image-slider/slider-tablet-after@1x.png 1x, images/content-site/image-slider/slider-tablet-after@2x.png 2x">
+              <img class="slider__image-after" src="images/content-site/image-slider/slider-mobile-after@1x.png" srcset="images/content-site/image-slider/slider-mobile-after@2x.png 2x" width="280" height="256" alt="Худой кот после питания нашим кормом">
+            </picture>
           </div>
         </div>
       </div>
@@ -127,7 +141,11 @@
 
     <section class="contacts address-map">
       <h2 class="visually-hidden">Наши контакты</h2>
-      <img class="address-map__image" src="#" width="1440" height="400" alt="Карта где расположен магазин">
+      <picture>
+        <source media="(min-width: 1440px)" width="1440" height="400" type="image/png" srcset="images/content-site/image-map/map-image-desktop@1x.png 1x, images/content-site/image-map/map-image-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/content-site/image-map/map-image-tablet@1x.png 1x, images/content-site/image-map/map-image-tablet@2x.png 2x">
+        <img class="address-map__image" src="images/content-site/image-map/map-image-mobile@1x.png" srcset="images/content-site/image-map/map-image-mobile@2x.png 2x" width="320" height="362" alt="Карта нахождения магазина">
+      </picture>
       <div class="contacts__address-wrapper">
         <p class="contacts__description">
           Приглашаем к сотрудничеству дилеров!
