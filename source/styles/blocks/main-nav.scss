@@ -1,8 +1,15 @@
 .main-nav {
-
+  font-family: $secondary-font;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
 .main-nav--index {
+
+}
+
+.main-nav--catalog {
 
 }
 
@@ -15,5 +22,14 @@
 }
 
 .main-nav__link {
+  color: var(--text-black);
+}
+
+.main-nav__link--current {
 
 }
+
+.main-nav__toggle {
+
+}
+

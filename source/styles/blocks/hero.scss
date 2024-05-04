@@ -1,0 +1,25 @@
+.hero {
+  background-color: var(--basic-bg-green);
+  color: var(--basic-light-color);
+  text-align: center;
+  font-family: $secondary-font;
+}
+
+.hero__title {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.hero__title-slogan {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.hero__button-link {
+
+}
+
+.hero__image {
+
+}
