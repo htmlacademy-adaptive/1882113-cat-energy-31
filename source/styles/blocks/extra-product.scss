@@ -7,7 +7,7 @@
 }
 
 .extra-product__row {
-
+  line-height: 14px;
 }
 
 .extra-product__name {
@@ -15,7 +15,11 @@
 }
 
 .extra-product__link {
-
+  font-family: $secondary-font;
+  color: var(--special-dark-gray2);
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
 }
 
 .extra-product__data {

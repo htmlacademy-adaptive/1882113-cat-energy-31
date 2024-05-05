@@ -3,7 +3,10 @@
 }
 
 .product-card__link {
-
+  font-family: $secondary-font;
+  font-weight: 400;
+  color: var(--special-dark-gray2);
+  text-transform: uppercase;
 }
 
 .product-card__image {
@@ -15,11 +18,13 @@
 }
 
 .product-card__title {
-
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .product-card__specifications {
-
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .product-card__term {
@@ -34,6 +39,16 @@
 
 }
 
-.product-card--view-all {
+.button-link--secondary {
+  color: var(--special-dark-gray);
+  background-color: var(--secondary-bg-color);
+}
 
+.product-card__title--view-all {
+  color: var(--text-black-secondary);
+}
+
+.product-card__description {
+  font-size: 12px;
+  line-height: 16px;
 }

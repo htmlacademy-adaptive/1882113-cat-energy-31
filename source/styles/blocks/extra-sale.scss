@@ -3,5 +3,9 @@
 }
 
 .extra-sale__title {
-
+  font-family: $secondary-font;
+  font-weight: 400;
+  color: var(--text-black);
+  font-size: 24px;
+  line-height: 24px;
 }
