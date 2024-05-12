@@ -3,10 +3,10 @@
 }
 
 .about-works__title {
-  color: var(--text-black);
+  color: var(--darken-color, #000000);
   font-family: $secondary-font;
   font-size: 36px;
-  line-height: 40px;
+  line-height: 1.11;
 }
 
 .about-works__list {

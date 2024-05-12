@@ -1,12 +1,12 @@
 .example {
-  background-color: var(--secondary-darker-bg-color);
+  background-color: var(--secondary-basic-light-accent-2, #eaeaea);
 }
 
 .example__title {
   font-family: $secondary-font;
-  color: var(--text-black);
+  color: var(--darken-color, #000000);
   font-size: 36px;
-  line-height: 40px;
+  line-height: 1.11;
 }
 
 .example__description {

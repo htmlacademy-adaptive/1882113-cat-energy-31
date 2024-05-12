@@ -1,10 +1,10 @@
 .product-catalog {
+
 }
 
 .product-catalog__title {
   font-family: $secondary-font;
   font-size: 36px;
-  font-weight: 400;
-  line-height: 36px;
-  color: var(--text-black);
+  line-height: 1;
+  color: var(--darken-color, #000000);
 }

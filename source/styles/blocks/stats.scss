@@ -12,20 +12,20 @@
 
 .stats__term {
   font-size: 12px;
-  line-height: 12px;
+  line-height: 1;
 }
 
 .stats__description {
   font-family: $secondary-font;
-  color: var(--text-black);
+  color: var(--darken-color, #000000);
   font-size: 24px;
-  line-height: 24px;
+  line-height: 1;
 }
 
 .stats__item--row {
   font-family: $secondary-font;
-  color: var(--text-black);
-  line-height: 20px;
+  color: var(--darken-color, #000000);
+  line-height: 1.42;
   text-transform: uppercase;
 }
 

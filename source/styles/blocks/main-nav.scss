@@ -2,7 +2,7 @@
   font-family: $secondary-font;
   font-weight: 400;
   font-size: 20px;
-  line-height: 20px;
+  line-height: 1;
   text-transform: uppercase;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .main-nav__link {
-  color: var(--text-black);
+  color: var(--darken-color, #000000);
 }
 
 .main-nav__link--current {

@@ -12,10 +12,9 @@
 
 .contacts__description {
   font-family: $secondary-font;
-  font-weight: 400;
-  color: var(--text-black-secondary);
+  color: var(--darken-lighten, #111111);
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   text-transform: uppercase;
 }
 
@@ -28,7 +27,7 @@
 }
 
 .contacts__address {
-  line-height: 20px;
+  line-height: 1.42;
   font-style: normal;
 }
 

@@ -7,9 +7,9 @@
 }
 
 .developer__text {
-  color: var(--special-dark-gray);
+  color: var(--special-dark-light, #444444);
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
 }
 
 .developer__logo {

@@ -1,11 +1,13 @@
 /* здесь используйте глобальные переменные */
 :root {
   --basic-light-color: #ffffff;
-  --secondary-bg-color: #f2f2f2;
-  --secondary-darker-bg-color: #eaeaea;
-  --basic-bg-green: #68b738;
-  --text-black: #000000;
-  --text-black-secondary: #111111;
-  --special-dark-gray: #444444;
-  --special-dark-gray2: #222222;
+  --secondary-basic-light-accent-1: #f2f2f2;
+  --secondary-basic-light-accent-2: #eaeaea;
+
+  --basic-brand-color: #68b738;
+
+  --darken-color: #000000;
+  --darken-lighten: #111111;
+  --special-dark: #222222;
+  --special-dark-light: #444444;
 }
