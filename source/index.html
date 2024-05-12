@@ -16,8 +16,16 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo-link logo" href="index.html">
-      <img class="logo__image" src="#" width="174" height="50" alt="Логотип магазина Кет-Энерджи">
-      <img class="logo__text" src="#" width="174" height="50" alt="Текстовый логотип магазина Кет-Энерджи">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="images/content-site/image-logo/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
+        <source media="(min-width: 768px)" srcset="images/content-site/image-logo/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+        <img class="logo__image" src="images/content-site/image-logo/logo-mobile.svg" width="33" height="38" alt="Логотип магазина Кет-Энерджи">
+      </picture>
+      <picture>
+        <source media="(min-width: 1440px)" srcset="images/content-site/image-logo/logo-desktop-text.svg" width="118" height="21" type="image/svg+xml">
+        <source media="(min-width: 768px)" srcset="images/content-site/image-logo/logo-tablet-text.svg" width="101" height="118" type="image/svg+xml">
+        <img class="logo__text" src="images/content-site/image-logo/logo-mobile-text.svg" width="101" height="118" alt="Текстовый логотип магазина Кет-Энерджи">
+      </picture>
     </a>
     <nav class="main-nav main-nav--index">
       <ul class="main-nav__list">
@@ -173,7 +181,7 @@
     <div class="container">
       <div class="footer__logo">
         <a class="footer__logo-link logo footer__logo-link--text-logo" href="index.html">
-          <img class="logo__text" src="#" width="174" height="50" alt="Текстовый логотип магазина Кет-Энерджи">
+          <img class="logo__text" src="images/content-site/image-logo/logo-mobile-text.svg" width="128" height="24" alt="Текстовый логотип магазина Кет-Энерджи">
         </a>
       </div>
       <ul class="social">
