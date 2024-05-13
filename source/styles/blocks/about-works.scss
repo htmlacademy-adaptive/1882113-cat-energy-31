@@ -14,25 +14,39 @@
 }
 
 .about-works__item {
+  &--eco::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url("../../icons/stack.svg#icon-eco");
+  }
 
+  &--easy::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url("../../icons/stack.svg#icon-colb");
+  }
+
+  &--eat::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url("../../icons/stack.svg#icon-tableware");
+  }
+
+  &--time::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url("../../icons/stack.svg#icon-clock");
+  }
 }
 
 .about-works__description {
-
-}
-
-.about-works__item--eco {
-
-}
-
-.about-works__item--easy {
-
-}
-
-.about-works__item--eat {
-
-}
-
-.about-works__item--time {
 
 }

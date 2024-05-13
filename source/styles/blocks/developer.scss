@@ -2,8 +2,11 @@
 
 }
 
-.developer__link {
-
+.developer__icon {
+  width: 27px;
+  height: 24px;
+  background-color: var(--special-dark-light-accent-2, #666666);
+  mask-image: url("../../icons/stack.svg#icon-htmlacademy");
 }
 
 .developer__text {
@@ -12,6 +15,3 @@
   line-height: 1.25;
 }
 
-.developer__logo {
-
-}

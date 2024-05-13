@@ -31,6 +31,10 @@
 }
 
 .main-nav__toggle {
-
+  background-image: url("../../icons/stack.svg#button-burger");
+  background-color: var(--basic-light-color, #ffffff);
+  width: 24px;
+  height: 24px;
+  border: none;
 }
 

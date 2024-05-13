@@ -7,18 +7,24 @@
 }
 
 .social__link {
+  &--vkontakte {
+    width: 28px;
+    height: 22px;
+    mask-image: url("../../icons/stack.svg#icon-vkontakte");
+    background-color: var(--special-dark-light-accent-2, #666666);
+  }
 
+  &--youtube {
+    width: 28px;
+    height: 22px;
+    mask-image: url("../../icons/stack.svg#icon-youtube");
+    background-color: var(--special-dark-light-accent-2, #666666);
+  }
+
+  &--telegram {
+    width: 28px;
+    height: 22px;
+    mask-image: url("../../icons/stack.svg#icon-telegram");
+    background-color: var(--special-dark-light-accent-2, #666666);
+  }
 }
-
-.social__link--vkontakte {
-
-}
-
-.social__link--youtube {
-
-}
-
-.social__link--telegram {
-
-}
-
