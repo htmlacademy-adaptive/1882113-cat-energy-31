@@ -24,6 +24,14 @@
 
 .main-nav__link {
   color: var(--darken-color, #000000);
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__link--current {

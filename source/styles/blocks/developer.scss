@@ -3,10 +3,28 @@
 }
 
 .developer__icon {
-  width: 27px;
-  height: 24px;
-  background-color: var(--special-dark-light-accent-2, #666666);
-  mask-image: url("../../icons/stack.svg#icon-htmlacademy");
+  &::before {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 24px;
+    mask-image: url("../../icons/stack.svg#icon-htmlacademy");
+    mask-size: 27px 24px;
+    mask-repeat: no-repeat;
+    background-color: var(--special-dark-light-accent-2, #666666);
+  }
+
+  &:hover::before {
+    background-color: var(--basic-brand-color, #68b738);
+  }
+
+  &:focus::before {
+    background-color: var(--basic-brand-color, #68b738);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .developer__text {
