@@ -2,7 +2,14 @@
 
 }
 
+.about-works__container {
+  width: 280px;
+  margin: 0 auto;
+  padding-bottom: 49px;
+}
+
 .about-works__title {
+  margin: 0;
   color: var(--darken-color, #000000);
   font-family: $secondary-font;
   font-size: 36px;
@@ -10,7 +17,8 @@
 }
 
 .about-works__list {
-
+  margin: 0;
+  padding: 0;
 }
 
 .about-works__item {

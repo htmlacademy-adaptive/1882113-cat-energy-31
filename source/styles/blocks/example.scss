@@ -1,5 +1,11 @@
 .example {
+  padding: 40px 0 25px;
   background-color: var(--secondary-basic-light-accent-2, #eaeaea);
+}
+
+.example__container {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .example__title {
@@ -9,6 +15,6 @@
   line-height: 1.11;
 }
 
-.example__description {
-
+.example__title {
+  margin: 0;
 }

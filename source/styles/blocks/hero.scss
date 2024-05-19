@@ -1,13 +1,24 @@
 .hero {
+  padding-top: 27px;
   background-color: var(--basic-brand-color, #68b738);
   color: var(--basic-light-color, #ffffff);
   text-align: center;
   font-family: $secondary-font;
+
+  @media (min-width: $tablet-width) {
+    background-color: var(--basic-light-color, #ffffff);
+  }
+}
+
+.hero__container {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .hero__title {
   font-size: 36px;
   line-height: 1;
+  margin: 0;
 }
 
 .hero__title-slogan {

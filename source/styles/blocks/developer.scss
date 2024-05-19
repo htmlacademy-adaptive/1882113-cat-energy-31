@@ -3,7 +3,10 @@
 }
 
 .developer__icon {
-  &::before {
+  display: flex;
+  justify-content: space-between;
+
+  &::after {
     content: "";
     display: block;
     width: 27px;
@@ -14,11 +17,11 @@
     background-color: var(--special-dark-light-accent-2, #666666);
   }
 
-  &:hover::before {
+  &:hover::after {
     background-color: var(--basic-brand-color, #68b738);
   }
 
-  &:focus::before {
+  &:focus::after {
     background-color: var(--basic-brand-color, #68b738);
   }
 

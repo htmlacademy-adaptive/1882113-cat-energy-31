@@ -2,6 +2,12 @@
 
 }
 
+.contacts__container {
+  width: 280px;
+  margin: 0 auto;
+  padding: 26 0;
+}
+
 .contacts__map-image {
 
 }
@@ -18,12 +24,8 @@
   text-transform: uppercase;
 }
 
-.contacts__address-wrapper {
-
-}
-
-.contacts-description {
-
+.contacts__description {
+  margin: 0;
 }
 
 .contacts__address {
@@ -32,9 +34,9 @@
 }
 
 .contacts__street {
-
+  margin: 0;
 }
 
 .contacts__city {
-
+  margin: 0;
 }

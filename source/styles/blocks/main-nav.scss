@@ -4,6 +4,8 @@
   font-size: 20px;
   line-height: 1;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
 }
 
 .main-nav--index {
@@ -15,7 +17,14 @@
 }
 
 .main-nav__list {
+  margin: 0;
+  padding: 0;
+  display: none;
 
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 33px;
+  }
 }
 
 .main-nav__item {
@@ -44,5 +53,9 @@
   width: 24px;
   height: 24px;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 

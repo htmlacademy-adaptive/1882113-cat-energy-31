@@ -1,13 +1,22 @@
-.program-efect {
+.program-effect {
+  padding: 20px 0;
+}
 
+.program-effect__container {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .program-effect__list {
-
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .program-effect__item {
-
+  background-color: var(--secondary-basic-light-accent-1, #f2f2f2);
 }
 
 .program__title {
