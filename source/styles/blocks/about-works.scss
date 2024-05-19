@@ -6,6 +6,15 @@
   width: 280px;
   margin: 0 auto;
   padding-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 45px 0 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }
 
 .about-works__title {
@@ -19,6 +28,16 @@
 .about-works__list {
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 37px 60px;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 78px;
+  }
 }
 
 .about-works__item {
@@ -52,6 +71,14 @@
     width: 60px;
     height: 60px;
     background-image: url("../../icons/stack.svg#icon-clock");
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 246px;
   }
 }
 

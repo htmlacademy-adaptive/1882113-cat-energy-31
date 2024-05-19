@@ -6,6 +6,16 @@
   width: 280px;
   margin: 0 auto;
   padding: 26 0;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }
 
 .contacts__map-image {

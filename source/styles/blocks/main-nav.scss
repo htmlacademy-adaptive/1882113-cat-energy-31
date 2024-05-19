@@ -6,6 +6,11 @@
   text-transform: uppercase;
   display: flex;
   align-items: center;
+
+  @media (min-width: $desktop-width) {
+    color: var(--basic-light-color, #ffffff);
+    background-color: var(--basic-brand-color, #68b738);
+  }
 }
 
 .main-nav--index {
@@ -40,6 +45,10 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: var(--basic-light-color, #ffffff);
   }
 }
 

@@ -1,11 +1,24 @@
 .example {
   padding: 40px 0 25px;
   background-color: var(--secondary-basic-light-accent-2, #eaeaea);
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 0 101px;
+  }
 }
 
 .example__container {
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    display: flex;
+  }
 }
 
 .example__title {

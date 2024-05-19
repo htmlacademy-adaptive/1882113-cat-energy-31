@@ -15,30 +15,32 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo-link logo" href="index.html">
-      <picture>
-        <source media="(min-width: 1440px)" srcset="images/content-site/image-logo/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
-        <source media="(min-width: 768px)" srcset="images/content-site/image-logo/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
-        <img class="logo__image" src="images/content-site/image-logo/logo-mobile.svg" width="33" height="38" alt="Логотип магазина Кет-Энерджи">
-      </picture>
-      <img class="logo__text" src="images/content-site/image-logo/logo-text.svg" width="101" height="118" alt="Текстовый логотип магазина Кет-Энерджи">
-    </a>
-    <nav class="main-nav main-nav--catalog">
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__link link" href="index.html">Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link link main-nav__link--current" href="#">Каталог продукции</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link link" href="#">Подбор программы</a>
-        </li>
-      </ul>
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-    </nav>
+    <div class="main-header__container">
+      <a class="main-header__logo-link logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/content-site/image-logo/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/content-site/image-logo/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+          <img class="logo__image" src="images/content-site/image-logo/logo-mobile.svg" width="33" height="38" alt="Логотип магазина Кет-Энерджи">
+        </picture>
+        <img class="logo__text" src="images/content-site/image-logo/logo-text.svg" width="101" height="18" alt="Текстовый логотип магазина Кет-Энерджи">
+      </a>
+      <nav class="main-nav main-nav--index">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--current" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link link" href="#">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main class="main-container">
