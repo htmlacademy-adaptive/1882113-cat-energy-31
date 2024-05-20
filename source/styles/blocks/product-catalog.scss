@@ -2,9 +2,21 @@
 
 }
 
+.product-catalog__container {
+  width: 280px;
+  margin: 0 auto;
+  padding: 27px 0 0;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+}
+
 .product-catalog__title {
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 1;
   color: var(--darken-color, #000000);
+  margin: 0;
+  padding: 27px 0 41px;
 }

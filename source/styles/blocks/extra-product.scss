@@ -1,5 +1,6 @@
 .extra-product {
-
+  margin: 0;
+  padding: 0;
 }
 
 .extra-product__item {
@@ -23,11 +24,12 @@
 }
 
 .extra-product__data {
-
+  margin: 0;
 }
 
 .extra-product__price {
   line-height: 1;
+  margin: 0;
 }
 
 .extra-product__button-link {
