@@ -8,6 +8,12 @@
     width: 324px;
     display: flex;
     flex-direction: column;
+    padding: 0 37px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    padding: 0 38px 40px;
   }
 }
 
@@ -31,6 +37,16 @@
   width: 140px;
   height: 107px;
   grid-area: 1/1/3/2;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 210px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+    height: 210px;
+  }
 }
 
 .product-card__image--big {

@@ -8,7 +8,13 @@
 
   @media (min-width: $tablet-width) {
     width: 708px;
-    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    display: grid;
+    grid-template-columns: 896px 245px;
+    gap: 81px;
   }
 }
 
