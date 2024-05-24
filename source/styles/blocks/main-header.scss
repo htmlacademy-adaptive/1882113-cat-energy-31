@@ -9,6 +9,9 @@
 .main-header__container {
   width: 280px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     display: flex;
