@@ -1,6 +1,7 @@
 .example {
   padding: 40px 0 25px;
   background-color: var(--secondary-basic-light-accent-2, #eaeaea);
+  min-width: 280px;
 
   @media (min-width: $tablet-width) {
     padding: 45px 0 101px;

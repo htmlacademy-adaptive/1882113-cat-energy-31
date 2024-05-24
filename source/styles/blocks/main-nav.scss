@@ -24,7 +24,15 @@
 .main-nav__list {
   margin: 0;
   padding: 0;
-  display: none;
+
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+    left: 0;
+    top: 65px;
+    background-color: #ffffff;
+    width: 100%;
+    min-width: 280px;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -33,7 +41,11 @@
 }
 
 .main-nav__item {
-
+  @media (max-width: $mobile-width-only) {
+    padding: 22px 0 24px;
+    text-align: center;
+    border-top: 1px solid var(--special-dark-light-accent-3, #e6e6e6);
+  }
 }
 
 .main-nav__link {
@@ -47,6 +59,11 @@
     opacity: 0.3;
   }
 
+  @media (max-width: $mobile-width-only) {
+    width: 280px;
+    margin: 0 auto;
+  }
+
   @media (min-width: $desktop-width) {
     color: var(--basic-light-color, #ffffff);
   }
@@ -57,14 +74,29 @@
 }
 
 .main-nav__toggle {
-  background-image: url("../../icons/stack.svg#button-burger");
-  background-color: var(--basic-light-color, #ffffff);
+  position: relative;
+  top: -45px;
+  left: 255px;
   width: 24px;
   height: 24px;
   border: none;
+  cursor: pointer;
+  z-index: 2;
+  background-color: var(--basic-light-color, #ffffff);
 
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.main-nav--closed .main-nav__toggle {
+  background-image: url("../../icons/stack.svg#button-burger");
+}
+
+.main-nav--opened .main-nav__toggle {
+  background-image: url("../../icons/stack.svg#button-close");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px;
 }
 

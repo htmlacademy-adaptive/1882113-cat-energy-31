@@ -1,7 +1,10 @@
 .extra-product {
   margin: 0;
   padding: 0;
-  grid-area: 2 / 1 / 3 / 2;
+
+  @media (min-width: $desktop-width) {
+    grid-area: 2 / 1 / 3 / 2;
+  }
 }
 
 .extra-product__item {

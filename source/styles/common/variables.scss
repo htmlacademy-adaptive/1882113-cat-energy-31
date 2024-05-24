@@ -11,8 +11,11 @@
   --special-dark: #222222;
   --special-dark-light: #444444;
   --special-dark-light-accent-2: #666666;
+  --special-dark-light-accent-3: #e6e6e6;
 }
 // Viewport
+$mobile-width: 320px;
+$mobile-width-only: 767px;
 $tablet-width: 768px;
 $desktop-width: 1330px;
 // content-width:1220px

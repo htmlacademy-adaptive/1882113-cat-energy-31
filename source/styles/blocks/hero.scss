@@ -4,6 +4,7 @@
   color: var(--basic-light-color, #ffffff);
   text-align: center;
   font-family: $secondary-font;
+  min-width: 280px;
 
   @media (min-width: $tablet-width) {
     color: var(--darken-color, #000000);
