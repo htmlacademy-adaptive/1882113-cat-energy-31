@@ -1,7 +1,10 @@
 .example {
-  padding: 40px 0 25px;
   background-color: var(--secondary-basic-light-accent-2, #eaeaea);
   min-width: 280px;
+
+  @media (max-width: $mobile-width-only) {
+    padding: 25px 0 40px;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 45px 0 101px;
@@ -27,8 +30,11 @@
   color: var(--darken-color, #000000);
   font-size: 36px;
   line-height: 1.11;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
-.example__title {
+.example__description {
   margin: 0;
+  margin-bottom: 20px;
 }
