@@ -1,16 +1,27 @@
 .slider {
   margin: 0;
   position: relative;
+  display: grid;
 }
 
 .slider picture {
   display: contents;
 }
 
+.slider__image-before {
+  clip-path: inset(0 50% 0 0);
+  grid-area: 1/1/2/-1;
+}
+
+.slider__image-after {
+  clip-path: inset(0 0 0 50%);
+  grid-area: 1/1/2/-1;
+}
+
 .slider-button {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 138px;
   display: block;
   padding: 0;
   background-color: var(--special-dark-light-accent-2, #666666);

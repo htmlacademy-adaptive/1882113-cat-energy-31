@@ -3,6 +3,7 @@
   display: grid;
   gap: 20px 32px;
   margin: 0;
+  padding-bottom: 20px;
 
   @media (max-width: $mobile-width-only) {
     grid-template-columns: 1fr 1fr;

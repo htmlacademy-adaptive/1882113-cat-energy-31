@@ -1,5 +1,7 @@
 .developer {
-
+  @media (max-width: $mobile-width-only) {
+    padding: 20px 0 0;
+  }
 }
 
 .developer__icon {

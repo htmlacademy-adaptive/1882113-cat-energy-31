@@ -1,5 +1,4 @@
 .hero {
-  // background-color: var(--basic-brand-color, #68b738);
   color: var(--basic-light-color, #ffffff);
   text-align: center;
   font-family: $secondary-font;
@@ -14,20 +13,18 @@
     position: absolute;
     background-color: var(--basic-brand-color, #68b738);
     background-image:
-      url("../../images/content-site/image-background/cat-mobile-background@2x.png"),
+      image-set(
+        url("../../images/content-site/image-background/cat-mobile-background@1x.webp") 1x,
+        url("../../images/content-site/image-background/cat-mobile-background@2x.webp") 2x,
+        url("../../images/content-site/image-background/cat-mobile-background@1x.png") 1x,
+        url("../../images/content-site/image-background/cat-mobile-background@2x.png") 2x,
+      ),
       linear-gradient(90deg, #65a73d 50%, #63a53b 50% 50%);
     background-repeat: no-repeat;
     background-position: top, center;
+    background-size: auto 100%;
     z-index: -1;
   }
-  // @media (max-width: $mobile-width-only) {
-  //   background-image:
-  //     url("../../images/content-site/image-background/cat-mobile-background@2x.png"),
-  //     linear-gradientlinear-gradient(rgb(98, 165, 98) 66.2%, #ffffff 34.8%),
-  //     linear-gradient(rgb(98, 165, 98) 66.2%, #ffffff 34.8%);
-  //   background-repeat: no-repeat;
-  //   background-position: top, center;
-  // }
 
   @media (min-width: $tablet-width) {
     color: var(--darken-color, #000000);
@@ -74,7 +71,19 @@
 }
 
 .hero__button-link {
+  @media (max-width: $mobile-width-only) {
+    width: 280px;
+    padding: 10px;
+  }
 
+  &:hover {
+    background-color: var(--button-lighten-color-hex, #5eaa2f);
+  }
+
+  &:active {
+    background-color: var(--button-lighten-color-hex, #5eaa2f);
+    color: var(--basic-light-color-rgba, rgba(255, 255, 255, 0.3));
+  }
 }
 
 .hero__image {
