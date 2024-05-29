@@ -111,8 +111,16 @@
     content: "";
     display: block;
     width: 32px;
-    height: 10px;
+    height: 12px;
     background-image: url("../../icons/stack.svg#icon-arrow");
+    background-position: -8px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: background-position 0.3s;
+  }
+
+  &:hover::after {
+    background-position: center;
   }
 
   @media (max-width: $mobile-width-only) {

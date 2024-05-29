@@ -28,6 +28,30 @@
 .contacts__map-wraper {
   display: grid;
   grid-template-columns: 1fr;
+
+  @media (max-width: $mobile-width-only) {
+    min-height: 362px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image:
+      image-set(
+        url("../../images/content-site/image-map/map-image-mobile@1x.webp") 1x,
+        url("../../images/content-site/image-map/map-image-mobile@2x.webp") 2x,
+        url("../../images/content-site/image-map/map-image-mobile@1x.png") 1x,
+        url("../../images/content-site/image-map/map-image-mobile@2x.png") 2x,
+      );
+  }
+
+  // @media (max-width: $tablet-width) {
+  //   min-height: 362px;
+  //   background-image:
+  //     image-set(
+  //       url("../../images/content-site/image-map/map-image-mobile@1x.webp") 1x,
+  //       url("../../images/content-site/image-map/map-image-mobile@2x.webp") 2x,
+  //       url("../../images/content-site/image-map/map-image-mobile@1x.png") 1x,
+  //       url("../../images/content-site/image-map/map-image-mobile@2x.png") 2x,
+  //     );
+  // }
 }
 
 .contacts__map-wraper picture {
