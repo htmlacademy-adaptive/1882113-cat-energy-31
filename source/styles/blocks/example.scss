@@ -32,9 +32,22 @@
   line-height: 1.11;
   margin: 0;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 1;
+    font-weight: 400;
+    margin: 0 0 60px;
+  }
 }
 
 .example__description {
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 55px;
+  }
 }
