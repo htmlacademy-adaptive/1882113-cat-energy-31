@@ -8,6 +8,12 @@
 
   @media (min-width: $tablet-width) {
     padding: 45px 0 101px;
+    background-image: linear-gradient(to top, var(--secondary-basic-light-accent-1, #f2f2f2) 465px, #ffffff 465px);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 45px 0 75px;
+    background-image: linear-gradient(to bottom, #ffffff 180px, var(--secondary-basic-light-accent-1, #f2f2f2) 180px);
   }
 }
 
@@ -21,7 +27,9 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 560px;
+    column-gap: 224px;
   }
 }
 
@@ -39,6 +47,10 @@
     font-weight: 400;
     margin: 0 0 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 146px;
+  }
 }
 
 .example__description {
@@ -49,5 +61,9 @@
     font-size: 16px;
     line-height: 1.5;
     margin: 0 0 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 69px;
   }
 }

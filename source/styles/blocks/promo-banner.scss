@@ -1,5 +1,16 @@
 .promo-banner {
-  background-color: var(--basic-brand-color, #68b738);
+  background-color: rgba(104, 183, 56);
+  min-height: 290px;
+  background-image:
+    linear-gradient(90deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    image-set(
+      url("../../images/content-site/image-background/background-baner-mobile@1x.webp") 1x,
+      url("../../images/content-site/image-background/background-baner-mobile@2x.webp") 2x,
+      url("../../images/content-site/image-background/background-baner-mobile@1x.jpg") 1x,
+      url("../../images/content-site/image-background/background-baner-mobile@2x.jpg") 2x,
+    );
+  background-repeat: no-repeat;
+  background-position: center;
 
   &::before {
     content: "";
@@ -7,11 +18,33 @@
     width: 78px;
     height: 80px;
     background-image: url("../../icons/stack.svg#icon-gift");
-    margin: 0 auto;
+    margin: 59px auto 48px;
   }
 
   @media (min-width: $tablet-width) {
-    width: 708px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 57px 125px 60px 77px;
+    width: 707px;
+    background-image:
+      linear-gradient(90deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      image-set(
+        url("../../images/content-site/image-background/background-baner-tablet@1x.webp") 1x,
+        url("../../images/content-site/image-background/background-baner-tablet@2x.webp") 2x,
+        url("../../images/content-site/image-background/background-baner-tablet@1x.jpg") 1x,
+        url("../../images/content-site/image-background/background-baner-tablet@2x.jpg") 2x,
+      );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: auto;
+
+    &::before {
+      width: 80px;
+      height: 82.5px;
+      padding: 0;
+      margin: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -25,4 +58,14 @@
   font-size: 16px;
   line-height: 1.25;
   text-align: center;
+  width: 161px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    height: fit-content;
+    text-align: start;
+    margin: 0;
+    width: 148px;
+    place-self: center end;
+  }
 }

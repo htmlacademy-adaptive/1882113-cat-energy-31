@@ -7,16 +7,21 @@
 .developer__icon {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   &::after {
     content: "";
     display: block;
     width: 27px;
-    height: 24px;
+    height: 34px;
     mask-image: url("../../icons/stack.svg#icon-htmlacademy");
-    mask-size: 27px 24px;
+    mask-size: 27px 34px;
     mask-repeat: no-repeat;
     background-color: var(--special-dark-light-accent-2, #666666);
+  }
+
+  @media (min-width: $tablet-width) {
+    column-gap: 23px;
   }
 
   &:hover::after {

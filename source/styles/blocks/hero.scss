@@ -4,33 +4,60 @@
   font-family: $secondary-font;
   min-width: 280px;
 
-  &::before {
-    content: "";
-    display: block;
-    width: 100%;
-    min-width: 280px;
-    height: 302px;
-    position: absolute;
-    background-color: var(--basic-brand-color, #68b738);
-    background-image:
-      linear-gradient(90deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-      image-set(
-        url("../../images/content-site/image-background/cat-mobile-background@1x.webp") 1x,
-        url("../../images/content-site/image-background/cat-mobile-background@2x.webp") 2x,
-        url("../../images/content-site/image-background/cat-mobile-background@1x.png") 1x,
-        url("../../images/content-site/image-background/cat-mobile-background@2x.png") 2x,
-      ),
-      linear-gradient(90deg, #505054 50%, #414245 50% 50%);
-    background-repeat: no-repeat;
-    background-position: top, center;
-    background-size: auto 100%;
-    z-index: -1;
+  @media (max-width: $mobile-width-only) {
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      min-width: 280px;
+      height: 302px;
+      position: absolute;
+      background-color: var(--basic-brand-color, #68b738);
+      background-image:
+        linear-gradient(90deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+        image-set(
+          url("../../images/content-site/image-background/cat-mobile-background@1x.webp") 1x,
+          url("../../images/content-site/image-background/cat-mobile-background@2x.webp") 2x,
+          url("../../images/content-site/image-background/cat-mobile-background@1x.png") 1x,
+          url("../../images/content-site/image-background/cat-mobile-background@2x.png") 2x,
+        ),
+        linear-gradient(90deg, #505054 50%, #414245 50% 50%);
+      background-repeat: no-repeat;
+      background-position: top, center;
+      background-size: auto 100%;
+      z-index: -1;
+    }
   }
 
   @media (min-width: $tablet-width) {
     padding: 64px 0 0;
     color: var(--darken-color, #000000);
-    background-color: var(--basic-light-color, #ffffff);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 32px 0 134px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 50%;
+      height: 694px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-image:
+        linear-gradient(90deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+        image-set(
+          url("../../images/content-site/image-background/index-background-desktop@1x.webp") 1x,
+          url("../../images/content-site/image-background/index-background-desktop@2x.webp") 2x,
+          url("../../images/content-site/image-background/index-background-desktop@1x.jpg") 1x,
+          url("../../images/content-site/image-background/index-background-desktop@2x.jpg") 2x,
+        ),
+        linear-gradient(90deg, #505054 50%, #414245 50% 50%);
+      z-index: -1;
+      background-repeat: no-repeat;
+      background-size: auto 100%;
+    }
   }
 }
 
@@ -49,6 +76,8 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
+    grid-auto-columns: 1fr 1fr;
+    grid-template-rows: auto auto 1fr;
   }
 }
 
@@ -113,6 +142,10 @@
     margin: 0 0 0 90px;
   }
 
+  @media (min-width: $desktop-width) {
+    height: 54px;
+  }
+
   &:hover {
     background-color: var(--button-lighten-color-hex, #5eaa2f);
   }
@@ -126,5 +159,10 @@
 .hero__image {
   @media (min-width: $tablet-width) {
     margin: -83px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 -163px;
+    grid-area: 1 / 2 / 4 / 3;
   }
 }

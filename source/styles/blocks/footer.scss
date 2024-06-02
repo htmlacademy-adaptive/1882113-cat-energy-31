@@ -18,8 +18,8 @@
 
   @media (min-width: $tablet-width) {
     width: 708px;
+    min-height: 37px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
 
@@ -31,6 +31,14 @@
 .footer__logo {
   @media (max-width: $mobile-width-only) {
     padding: 0 0 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 160px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 416px;
   }
 }
 

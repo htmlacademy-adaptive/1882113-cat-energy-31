@@ -2,6 +2,17 @@
   margin: 0;
   position: relative;
   display: grid;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+    margin: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: 1/2/4/3;
+    margin: 0;
+  }
 }
 
 .slider picture {
@@ -21,7 +32,7 @@
 .slider-button {
   position: absolute;
   top: 0;
-  left: 138px;
+  left: 50%;
   display: block;
   padding: 0;
   background-color: var(--special-dark-light-accent-2, #666666);

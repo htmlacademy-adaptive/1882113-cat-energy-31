@@ -1,5 +1,9 @@
 .sales {
+  padding: 40px 0;
 
+  @media (min-width: $tablet-width) {
+    padding: 80px 0;
+  }
 }
 
 .sales__container {
@@ -10,7 +14,7 @@
     width: 708px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     width: 1220px;
   }
 }
@@ -20,4 +24,31 @@
   color: var(--darken-color, #000000);
   font-size: 24px;
   line-height: 1;
+  margin: 0;
+  width: fit-content;
+  background-color: var(--basic-light-color, #ffffff);
+  box-shadow:
+    40px 0 0 0 var(--basic-light-color, #ffffff),
+    -40px 0 0 0 var(--basic-light-color, #ffffff);
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 2px;
+    right: 0;
+    background-color: var(--basic-brand-color, #68b738);
+    box-shadow: 100vw 0 0 0 var(--basic-brand-color, #68b738);
+    margin-top: 13px;
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 1;
+
+    &::before {
+      margin-top: 20px;
+    }
+  }
 }

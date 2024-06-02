@@ -1,5 +1,5 @@
 .product-catalog {
-
+  padding: 0 0 74px;
 }
 
 .product-catalog__container {
@@ -9,6 +9,7 @@
 
   @media (min-width: $tablet-width) {
     width: 708px;
+    padding: 67px 0 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -22,5 +23,10 @@
   line-height: 1;
   color: var(--darken-color, #000000);
   margin: 0;
-  padding: 27px 0 41px;
+  padding: 0 0 41px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    padding: 0 0 84px;
+  }
 }

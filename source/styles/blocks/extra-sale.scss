@@ -1,5 +1,5 @@
 .extra-sale {
-
+  padding: 25px 0 0;
 }
 
 .extra-sale__container {
@@ -24,6 +24,33 @@
   color: var(--darken-color, #000000);
   font-size: 24px;
   line-height: 1;
-  padding: 25px 0 36px;
+  padding: 0 0 36px;
   margin: 0;
+  background-color: var(--basic-light-color, #ffffff);
+  width: fit-content;
+  box-shadow:
+    40px 0 0 0 var(--basic-light-color, #ffffff),
+    -40px 0 0 0 var(--basic-light-color, #ffffff);
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 2px;
+    right: 0;
+    background-color: var(--basic-brand-color, #68b738);
+    box-shadow: 100vw 0 0 0 var(--basic-brand-color, #68b738);
+    margin-top: 13px;
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    padding: 0;
+    margin: 0 0 80px;
+
+    &::before {
+      margin-top: 20px;
+    }
+  }
 }
