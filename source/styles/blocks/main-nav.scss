@@ -197,10 +197,6 @@
   }
 }
 
-.main-nav__link--current {
-
-}
-
 .main-nav__toggle {
   width: 24px;
   height: 24px;
@@ -221,22 +217,3 @@
     display: none;
   }
 }
-
-// .main-nav--closed .main-nav__toggle {
-//   background-image: url("../../icons/stack.svg#button-burger");
-// }
-
-// .main-nav--opened .main-nav__toggle {
-//   background-image: url("../../icons/stack.svg#button-close");
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: 18px;
-// }
-
-// .main-nav--opened .main-nav__list {
-//   display: block;
-//   position: absolute;
-//   left: 0;
-//   top: 65px;
-// }
-
