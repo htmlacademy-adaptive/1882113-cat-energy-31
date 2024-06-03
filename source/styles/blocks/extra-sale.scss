@@ -15,7 +15,7 @@
     width: 1220px;
     display: grid;
     grid-template-columns: 896px 245px;
-    gap: 81px;
+    gap: 80px;
   }
 }
 
@@ -52,5 +52,10 @@
     &::before {
       margin-top: 20px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    margin: 0;
   }
 }

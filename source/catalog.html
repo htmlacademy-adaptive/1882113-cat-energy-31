@@ -24,19 +24,19 @@
         </picture>
         <img class="logo__text" src="images/content-site/image-logo/logo-text.svg" width="101" height="18" alt="Текстовый логотип магазина Кет-Энерджи">
       </a>
-      <nav class="main-nav main-nav--closed main-nav--nojs main-nav--index">
+      <nav class="main-nav main-nav--closed main-nav--nojs main-nav--catalog">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
+            <a class="main-nav__link main-nav__link--catalog" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link link main-nav__item--current" href="catalog.html">Каталог продукции</a>
+            <a class="main-nav__link main-nav__link--catalog link main-nav__item--current" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link link" href="#">Подбор программы</a>
+            <a class="main-nav__link main-nav__link--catalog link" href="#">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -338,7 +338,7 @@
           </p>
           <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="email">Укажите ваш email</label>
-            <input class="subscribe__input-email" name="email" id="email" type="email" placeholder="кuklachev@gmail.com" required>
+            <input class="subscribe__input-email error" name="email" id="email" type="email" placeholder="кuklachev@gmail.com" required>
             <button class="subscribe-button button" type="submit">Подписаться</button>
           </form>
         </div>

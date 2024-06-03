@@ -16,6 +16,10 @@
     line-height: 1.33;
     width: 632px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
 }
 
 .subscribe__form {
@@ -37,12 +41,28 @@
   padding: 13px;
   text-transform: uppercase;
   width: 100%;
-  border: 1px solid var(--special-dark-light-accent-5, #cdcdcd);
+  border: 1px solid var(--special-dark-light-accent-7, #e7e7e7);
 
   @media (min-width: $tablet-width) {
     width: 376px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 496px;
+  }
+
+  &:hover {
+    border-color: var(--special-dark-light-accent-5, #cdcdcd);
+  }
+
+  &:focus {
+    outline-color: var(--special-dark-light, #444444);
+  }
 }
+
+// .subscribe__input-email.error {
+//   border-color: var(--status-error, #ff8282);
+// }
 
 .subscribe-button {
   border: none;
