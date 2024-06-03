@@ -12,8 +12,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 45px 0 75px;
-    background-image: linear-gradient(to bottom, #ffffff 180px, var(--secondary-basic-light-accent-1, #f2f2f2) 180px);
+    padding: 25px 0 75px;
+    background-image: linear-gradient(to bottom, #ffffff 160px, var(--secondary-basic-light-accent-1, #f2f2f2) 160px);
   }
 }
 
@@ -29,7 +29,7 @@
     width: 1220px;
     display: grid;
     grid-template-columns: 1fr 560px;
-    column-gap: 224px;
+    column-gap: 228px;
   }
 }
 
@@ -39,7 +39,7 @@
   font-size: 36px;
   line-height: 1.11;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;

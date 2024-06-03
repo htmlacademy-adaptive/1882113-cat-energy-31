@@ -1,7 +1,7 @@
 
 .stats {
   display: grid;
-  gap: 20px 32px;
+  gap: 3px 32px;
   margin: 0;
   padding-bottom: 20px;
 
@@ -12,11 +12,14 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: 162px 162px 1fr;
     column-gap: 43px;
+    padding: 0;
+    margin: 0 0 85px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 162px 162px;
-    gap: 55px 43px;
+    gap: 29px 42px;
+    margin: 0;
   }
 }
 
@@ -50,6 +53,7 @@
       font-size: 20px;
       line-height: 1;
       margin-top: 11px;
+      row-gap: 10px;
     }
   }
 
@@ -58,7 +62,7 @@
       flex-direction: row;
       grid-area: 2 / 1 / 3 / 3;
       justify-self: normal;
-      column-gap: 43px;
+      column-gap: 28px;
     }
   }
 }
@@ -94,7 +98,7 @@
   line-height: 1;
   width: 100%;
   text-align: center;
-  padding-block: 14px;
+  padding-block: 16px;
   border-radius: 3%;
   margin: 0;
 

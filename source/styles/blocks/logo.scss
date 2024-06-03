@@ -15,5 +15,10 @@
 .logo__text {
   width: 101px;
   height: 18px;
+
+  @media (min-width: $desktop-width) {
+    width: 119px;
+    height: 21px;
+  }
 }
 

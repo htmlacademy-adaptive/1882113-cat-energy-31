@@ -21,10 +21,10 @@
   grid-template-columns: 1fr 1fr;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
+    width: 628px;
     display: grid;
     grid-template-columns: 163px 163px;
-    column-gap: 54%;
+    column-gap: 302px;
     padding: 60px 0;
   }
 

@@ -37,6 +37,7 @@
 
   @media (min-width: $desktop-width) {
     color: var(--basic-light-color, #ffffff);
+    width: 477px;
   }
 }
 
@@ -60,12 +61,13 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    gap: 33px;
-    width: 436px;
+    gap: 34px;
+    width: 440px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 476px;
+    width: 100%;
+    gap: 33px;
   }
 }
 
@@ -84,7 +86,7 @@
         content: "";
         position: absolute;
         right: 0;
-        bottom: 3px;
+        bottom: -1px;
         left: 0;
         height: 2px;
         background-color: var(--basic-brand-color, #68b738);
@@ -100,7 +102,7 @@
         content: "";
         position: absolute;
         right: 0;
-        bottom: 3px;
+        bottom: -1px;
         left: 0;
         height: 2px;
         background-color: var(--basic-light-color, #ffffff);
@@ -145,12 +147,17 @@
     font-size: 18px;
     padding: 14px 0 12px;
 
+    @media (max-width: $mobile-width-only) {
+      width: 280px;
+      margin: 0 auto;
+    }
+
     &::before {
       content: "";
       position: absolute;
       width: 0;
       right: 0;
-      bottom: 3px;
+      bottom: -1px;
       height: 2px;
       background-color: var(--basic-brand-color, #68b738);
       transition: 0.25s;
@@ -163,11 +170,6 @@
     }
   }
 
-
-  @media (max-width: $mobile-width-only) {
-    width: 280px;
-    margin: 0 auto;
-  }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;

@@ -1,10 +1,13 @@
 .footer {
-  padding: 40px 0;
   background-color: var(--secondary-basic-light-accent-1, #f2f2f2);
   min-width: 280px;
 
   @media (min-width: $tablet-width) {
     padding: 55px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 66px 0;
   }
 }
 
@@ -13,7 +16,7 @@
   margin: 0 auto;
 
   @media (max-width: $mobile-width-only) {
-    padding: 40px 0;
+    padding: 36px 0 40px;
   }
 
   @media (min-width: $tablet-width) {
@@ -30,7 +33,7 @@
 
 .footer__logo {
   @media (max-width: $mobile-width-only) {
-    padding: 0 0 20px;
+    padding: 3px 0 20px;
   }
 
   @media (min-width: $tablet-width) {
@@ -42,8 +45,12 @@
   }
 }
 
+.footer__logo-link {
+  // padding: 4px 0;
+}
+
 .footer__logo-link--text-logo {
-  width: 128px;
+  width: 130px;
   height: 24px;
   margin: 0 auto;
 }
