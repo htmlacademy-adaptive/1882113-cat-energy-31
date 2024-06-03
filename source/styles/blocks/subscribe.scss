@@ -15,17 +15,20 @@
     font-size: 24px;
     line-height: 1.33;
     width: 632px;
+    padding: 66px 0 24px;
   }
 
   @media (min-width: $desktop-width) {
     width: auto;
+    margin: 0;
+    padding: 0 0 24px;
   }
 }
 
 .subscribe__form {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 13px;
 
   @media (min-width: $tablet-width) {
     flex-wrap: nowrap;
@@ -66,7 +69,7 @@
 
 .subscribe-button {
   border: none;
-  padding: 14px 26px;
+  padding: 15px 26px;
   width: 100%;
   cursor: pointer;
 

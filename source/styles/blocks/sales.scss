@@ -44,21 +44,26 @@
     right: 0;
     background-color: var(--basic-brand-color, #68b738);
     box-shadow: 100vw 0 0 0 var(--basic-brand-color, #68b738);
-    margin-top: 13px;
+    margin-top: 9px;
     z-index: -1;
   }
 
   @media (min-width: $tablet-width) {
-    font-size: 36px;
+    font-size: 32px;
     line-height: 1;
+    margin: 0 0 0 40px;
 
     &::before {
-      margin-top: 20px;
+      margin-top: 14px;
     }
   }
 
   @media (min-width: $desktop-width) {
     font-size: 40px;
     margin: 0 0 72px;
+
+    &::before {
+      margin-top: 16px;
+    }
   }
 }

@@ -1,5 +1,4 @@
 .extra-sale {
-  padding: 25px 0 0;
 }
 
 .extra-sale__container {
@@ -40,22 +39,26 @@
     right: 0;
     background-color: var(--basic-brand-color, #68b738);
     box-shadow: 100vw 0 0 0 var(--basic-brand-color, #68b738);
-    margin-top: 13px;
+    margin-top: 11px;
     z-index: -1;
   }
 
   @media (min-width: $tablet-width) {
-    font-size: 36px;
+    font-size: 32px;
     padding: 0;
-    margin: 0 0 80px;
+    margin: 0 0 80px 40px;
 
     &::before {
-      margin-top: 20px;
+      margin-top: 16px;
     }
   }
 
   @media (min-width: $desktop-width) {
     font-size: 40px;
     margin: 0;
+
+    &::before {
+      margin-top: 17px;
+    }
   }
 }

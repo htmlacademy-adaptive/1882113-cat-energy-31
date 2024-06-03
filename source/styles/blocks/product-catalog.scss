@@ -1,5 +1,11 @@
 .product-catalog {
-  padding: 0 0 74px;
+  @media (min-width: $tablet-width) {
+    padding: 0 0 74px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 71px;
+  }
 }
 
 .product-catalog__container {
@@ -14,6 +20,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
+    padding: 74px 0 0;
   }
 }
 
