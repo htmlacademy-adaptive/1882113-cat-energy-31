@@ -1,0 +1,24 @@
+.logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.logo__text {
+  width: 101px;
+  height: 18px;
+
+  @media (min-width: $desktop-width) {
+    width: 119px;
+    height: 21px;
+  }
+}
+

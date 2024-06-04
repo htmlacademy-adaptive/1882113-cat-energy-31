@@ -1,0 +1,139 @@
+.about-works {
+
+}
+
+.about-works__container {
+  width: 280px;
+  margin: 0 auto;
+  padding-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 0 0 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
+.about-works__title {
+  margin: 0;
+  color: var(--darken-color, #000000);
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 1.11;
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    margin-bottom: 32px;
+    line-height: 1;
+    font-weight: 400;
+  }
+}
+
+.about-works__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  @media (max-width: $mobile-width-only) {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    gap: 38px 60px;
+    flex-wrap: wrap;
+    counter-reset: example 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 78px;
+  }
+}
+
+.about-works__item {
+  display: grid;
+  counter-increment: example 1;
+
+  &--eco::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url("../../icons/stack.svg#icon-eco");
+  }
+
+  &--easy::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url("../../icons/stack.svg#icon-colb");
+  }
+
+  &--eat::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url("../../icons/stack.svg#icon-tableware");
+  }
+
+  &--time::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url("../../icons/stack.svg#icon-clock");
+  }
+
+  @media (max-width: $mobile-width-only) {
+    grid-template-columns: 60px 1fr;
+    align-items: center;
+    gap: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    min-height: 280px;
+    counter-increment: example 1;
+    grid-template-columns: 242px 1fr;
+    grid-template-rows: auto 1fr;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      margin: 40px 0 31px;
+    }
+
+    &::after {
+      content: counter(example);
+      color: var(--secondary-basic-light-accent-1, #f2f2f2);
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 280px;
+      line-height: 1;
+      grid-area: 1 / 2 / 3 / 3;
+      margin-left: -130px;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 246px;
+  }
+}
+
+.about-works__description {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}

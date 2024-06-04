@@ -1,0 +1,45 @@
+.developer {
+  @media (max-width: $mobile-width-only) {
+    padding: 19px 0 0;
+  }
+}
+
+.developer__icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 34px;
+    mask-image: url("../../icons/stack.svg#icon-htmlacademy");
+    mask-size: 27px 34px;
+    mask-repeat: no-repeat;
+    background-color: var(--special-dark-light-accent-2, #666666);
+  }
+
+  @media (min-width: $tablet-width) {
+    column-gap: 23px;
+  }
+
+  &:hover::after {
+    background-color: var(--basic-brand-color, #68b738);
+  }
+
+  &:focus::after {
+    background-color: var(--basic-brand-color, #68b738);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.developer__text {
+  color: var(--special-dark-light, #444444);
+  font-size: 16px;
+  line-height: 1.25;
+}
+
